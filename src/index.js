@@ -3,13 +3,12 @@ const bodyParser = require('body-parser');
 const route = require('./route/route.js');
 const { default: mongoose } = require('mongoose');
 const app = express();
-const router = express.Router()
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-mongoose.connect("mongodb+srv://neesh:E8DNG8XaM4rrzJCV@cluster0.vlwog.mongodb.net/projectBlog", {
+mongoose.connect("mongodb+srv://Dipen1234:jVP8pyAv3s3NzEM3@cluster0.dkmbl.mongodb.net/Project1-finalBlogs", {
     useNewUrlParser: true
 })
 .then( () => console.log("MongoDb is connected"))
