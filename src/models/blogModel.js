@@ -18,7 +18,7 @@ const blogSchema = new mongoose.Schema({
     },
 
 
-    tags: [ String ],
+    tags: [String],
 
     category:
 
@@ -43,7 +43,7 @@ const blogSchema = new mongoose.Schema({
     deletedAt: {
         type: Date, default: null
     }
-},{ timestamps: true });
+}, { timestamps: true });
 
 
 module.exports = mongoose.model('Blog', blogSchema)        //blogs 
